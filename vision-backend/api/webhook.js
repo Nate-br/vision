@@ -105,3 +105,4 @@ app.post('/api/auth/login-pin', async (req, res) => {
 });
 
 module.exports = app;
+module.exports.handler = serverless(app);
