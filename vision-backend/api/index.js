@@ -263,5 +263,9 @@ app.post('/api/auth/login-pin', async (req, res) => {
     user: { name: user.name, church: user.church, gender: user.gender } 
   });
 });
-
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`🚀 Server is running on port ${PORT}`);
+  console.log("✅ Ready to receive webhooks from Telegram!");
+});
 module.exports = app;
