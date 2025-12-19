@@ -1,3 +1,6 @@
+console.log("🚀 VERCEL FUNCTION STARTING...");
+console.log("BOT_TOKEN present:", !!process.env.BOT_TOKEN);
+console.log("MONGODB_URI present:", !!process.env.MONGODB_URI);
 const express = require('express');
 const mongoose = require('mongoose');
 const TelegramBot = require('node-telegram-bot-api');
